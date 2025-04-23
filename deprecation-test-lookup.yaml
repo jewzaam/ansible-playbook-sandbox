@@ -4,6 +4,6 @@
   - name: create a schedule for the inventory source
     debug:
       # name: "Source Schedule"
-      msg: "{{ lookup('awx.awx.schedule_rrule', 'none', start_date='2024-08-22 04:10:00', timezone='America/Denver') }}"
+      msg: "{{ lookup('ansible.controller.schedule_rrule', 'none', start_date='2024-08-22 04:10:00', timezone='America/Denver') }}"
       # unified_job_template: "Demo Job Template"
 
